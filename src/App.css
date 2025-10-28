@@ -1,0 +1,26 @@
+/* --- Tùy chỉnh thanh cuộn cho div .history --- */
+
+/* 1. Dành cho Firefox */
+.history {
+  scrollbar-width: thin;
+  /* [màu-thumb] [màu-track]  */
+  scrollbar-color: #555555 #222222;
+}
+
+/* 2. Dành cho Chrome, Safari, và Edge (WebKit) */
+.history::-webkit-scrollbar {
+  width: 6px; /* Chiều rộng thanh cuộn */
+}
+
+.history::-webkit-scrollbar-track {
+  background: #222222; /* Màu nền của track (giống hệt màu Sider) */
+}
+
+.history::-webkit-scrollbar-thumb {
+  background-color: #555555; /* Màu của thanh cuộn (thumb) */
+  border-radius: 10px;    /* Bo tròn thanh cuộn */
+}
+
+.history::-webkit-scrollbar-thumb:hover {
+  background-color: #777777; /* Màu khi di chuột vào */
+}
