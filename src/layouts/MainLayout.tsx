@@ -2,6 +2,7 @@ import { Layout } from "antd";
 import { Outlet } from "react-router-dom";
 import ToastProvider from "../contexts/ToastContext"
 import Sider from "../components/sider/Sider";
+import { ChatProvider } from "../contexts/ChatContext";
 
 
 const { Header , Content } = Layout;
@@ -9,7 +10,10 @@ const { Header , Content } = Layout;
 export default function MainLayout() {
     return (
         <ToastProvider>
-            <Layout hasSider className="h-screen">
+            
+            <ChatProvider>
+
+                <Layout hasSider className="h-screen">
                 <Sider/>
                 <Layout>
                     <Header className="bg-[#ffffff]!">
@@ -24,6 +28,9 @@ export default function MainLayout() {
                     </Content>
                 </Layout>
             </Layout>
+
+            </ChatProvider>
+
         </ToastProvider>
     );
 }

@@ -1,0 +1,14 @@
+{
+  "messages": [
+    {
+      "id": 1, 
+      "role": "user",
+      "content": "Hi, can you help me?"
+    },
+    {
+      "id": 2,
+      "role": "assistant",
+      "content": "Hello! I am a JSON-Server API. I can generate random Markdown responses."
+    }
+  ]
+}

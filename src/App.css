@@ -1,0 +1,104 @@
+/* --- Tùy chỉnh thanh cuộn cho SIDER (.custom-scrollbar) --- */
+
+/* 1. Dành cho Firefox (Nền tối) */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #222222 #222222; /* thumb / track */
+}
+.custom-scrollbar:hover {
+  scrollbar-color: #555555 #222222;
+}
+
+/* 2. Dành cho Chrome/WebKit (Nền tối) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px; 
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #222222; /* <-- NỀN TỐI (cho Sider) */
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 10px;    
+}
+.custom-scrollbar:hover::-webkit-scrollbar-thumb {
+  background-color: #555555;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #777777; 
+}
+.custom-scrollbar::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* --- TÙY CHỈNH THANH CUỘN CHO CHATPAGE (.chatpage-scrollbar) --- */
+
+/* 1. Dành cho Firefox (Nền sáng) */
+.chatpage-scrollbar {
+  scrollbar-width: thin;
+  /* Mặc định: thumb và track đều màu trắng */
+  scrollbar-color: #ffffff #ffffff; 
+}
+.chatpage-scrollbar:hover {
+  /* Khi hover: thumb màu xám nhạt, track màu trắng */
+  scrollbar-color: #aaaaaa #ffffff; 
+}
+
+/* 2. Dành cho Chrome/WebKit (Nền sáng) */
+.chatpage-scrollbar::-webkit-scrollbar {
+  width: 6px; 
+}
+.chatpage-scrollbar::-webkit-scrollbar-track {
+  background: #ffffff; /* <-- NỀN SÁNG (cho ChatPage) */
+}
+.chatpage-scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Mặc định trong suốt */
+  border-radius: 10px;    
+}
+.chatpage-scrollbar:hover::-webkit-scrollbar-thumb {
+  background-color: #aaaaaa; /* Hiện lên khi hover (màu xám nhạt) */
+}
+.chatpage-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #888888; /* Đậm hơn khi hover vào thumb */
+}
+.chatpage-scrollbar::-webkit-scrollbar-button {
+  display: none;
+}
+
+.chatpage-scrollbar,
+.chatpage-scrollbar textarea {
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff #ffffff; 
+}
+.chatpage-scrollbar:hover,
+.chatpage-scrollbar textarea:hover {
+  scrollbar-color: #aaaaaa #ffffff; 
+}
+
+/* 2. Dành cho Chrome/WebKit (Nền sáng) */
+.chatpage-scrollbar::-webkit-scrollbar,
+.chatpage-scrollbar textarea::-webkit-scrollbar {
+  width: 6px; 
+  height: min-content;
+}
+.chatpage-scrollbar::-webkit-scrollbar-track,
+.chatpage-scrollbar textarea::-webkit-scrollbar-track {
+  background: red; 
+}
+.chatpage-scrollbar::-webkit-scrollbar-thumb,
+.chatpage-scrollbar textarea::-webkit-scrollbar-thumb {
+  background-color: transparent; 
+  border-radius: 10px;    
+}
+.chatpage-scrollbar:hover::-webkit-scrollbar-thumb,
+.chatpage-scrollbar textarea:hover::-webkit-scrollbar-thumb {
+  background-color: #aaaaaa;
+}
+.chatpage-scrollbar::-webkit-scrollbar-thumb:hover,
+.chatpage-scrollbar textarea::-webkit-scrollbar-thumb:hover {
+  background-color: #888888;
+}
+.chatpage-scrollbar::-webkit-scrollbar-button,
+.chatpage-scrollbar textarea::-webkit-scrollbar-button {
+  display: none; /* <-- Dòng này sẽ ẩn các mũi tên tam giác */
+}
+

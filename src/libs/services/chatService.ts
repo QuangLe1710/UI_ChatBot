@@ -1,4 +1,5 @@
 import { chatApi } from "../../api/chatApi";
+import type { Conversation } from "../conversation";
 import type { Message } from "../message";
 
 export const chatService = {
@@ -12,5 +13,13 @@ export const chatService = {
         }
 
         return chatApi.chat(text);
+    },
+
+    getHistory: async (): Promise<Conversation[]> => {
+        return chatApi.getHistory();
+    },
+
+    saveConversation: async (conversation: Conversation): Promise<Conversation> => {
+        return chatApi.saveConversation(conversation);
     }
 };
