@@ -35,7 +35,7 @@ export default function ChatPage() {
 
     return (
         <div className="flex flex-col h-full bg-[#ffffff]">
-            <div className="flex-1 overflow-y-auto">
+            <div className="flex-1 overflow-y-auto chatpage-scrollbar">
                 {messages.length === 0 && !isLoading ? (
                     <div className="flex items-end h-full justify-center">
                         <div className="text-[35px] font-medium">

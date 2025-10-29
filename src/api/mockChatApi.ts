@@ -7,12 +7,12 @@ const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 // Data for getMessages (initial chat history)
 const initialMockMessages: Message[] = [
-    { role: "user", content: "Hi, can you help me?" },
-    {
-        role: "assistant",
-        content:
-            "Hello! I am a mock API. I can generate random Markdown responses.",
-    },
+    // { role: "user", content: "Hi, can you help me?" },
+    // {
+    //     role: "assistant",
+    //     content:
+    //         "Hello! I am a mock API. I can generate random Markdown responses.",
+    // },
 ];
 
 // List of random Markdown answers
@@ -65,7 +65,7 @@ function getUser(id: number): User {
     `
 Here is a quote:
 > "The only way to do great work is to love what you do."
-> \- Steve Jobs
+> - Steve Jobs
 
 You can also use ~~strikethrough~~ to show deleted text.
   `,
