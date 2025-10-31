@@ -9,15 +9,9 @@ import { Avatar, Switch } from "antd";
 import { FormOutlined, LoadingOutlined } from "@ant-design/icons";
 import SiderItem from "./SiderItem";
 import { useChatContext } from "../../contexts/ChatContext";
-// import type { Message } from "../../libs/message";
 import type { Conversation } from "../../libs/conversation";
 import { chatService } from "../../libs/services/chatService";
-
-// const historyChatData: Message[] = [
-//     { role: "user", content: "hello 1" },
-//     { role: "user", content: "hello 2" },
-//     { role: "user", content: "hello 3" },
-// ];
+import { Columns2, LayoutSplit, LayoutPanelTop } from "lucide-react";
 
 export default function Sider() {
     const [history, setHistory] = useState<Conversation[]>([]);
@@ -128,7 +122,7 @@ export default function Sider() {
                                 className="text-white hover:bg-[#A50034] gap-2 py-1.5 font-bold text-[20px] rounded-[10px] flex items-center justify-center"
 
                             >
-                                <FormOutlined />    New Chat
+                             New Chat
                             </SiderItem>
                         </div>
 

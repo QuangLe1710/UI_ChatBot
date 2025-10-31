@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useEffect, type ReactNode } from "react";
-import type { Message } from "../libs/message"; //
-import { chatService } from "../libs/services/chatService"; //
+import type { Message } from "../libs/message"; 
+import { chatService } from "../libs/services/chatService"; 
 
 interface ChatContextType {
     messages: Message[];

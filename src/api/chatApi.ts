@@ -13,18 +13,16 @@ export const chatApi = {
     },
 
     /**
-     * Lấy về toàn bộ lịch sử
+     * Get All History Conversations
      */
     getHistory: async (): Promise<Conversation[]> => {
-        // Gọi mock API mới
         return mockConversationApi.getHistory();
     },
 
     /**
-     * Lưu một cuộc hội thoại mới
+     * Save a new conversation
      */
     saveConversation: async (conversation: Conversation): Promise<Conversation> => {
-        // Gọi mock API mới
         return mockConversationApi.saveConversation(conversation);
     }
 }
